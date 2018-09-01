@@ -1,7 +1,6 @@
 @Library('pipeline-lib')
 
 node {
- stages {
  
  stage('Git Clone App') {
         def projectName = new utils().getProjectName()
@@ -27,5 +26,5 @@ node {
  archiveArtifacts artifacts: 'rectangle.jar', fingerprint:
 true
  }
- }
+ 
 }
