@@ -1,6 +1,13 @@
 pipeline {
 agent any
  stages {
+ 
+ stage('Git Clone App') {
+        def projectName = new utils().getProjectName()
+            sh "git clone git@https://github.com/flyriyazsky/${projectName}.git -b ${env.BRANCH_NAME} ."
+        } 
+  
+  
  stage('build') {
  steps {
  sh 'javac -d . src/*.java'
