@@ -1,6 +1,6 @@
 @Library('pipeline-lib') import *
 
-pipeline {
+node {
 agent any
  stages {
  
