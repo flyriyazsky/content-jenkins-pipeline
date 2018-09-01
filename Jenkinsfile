@@ -1,4 +1,4 @@
-@Library('pipeline-lib') import *
+@Library('pipeline-lib')
 
 node {
 agent any
