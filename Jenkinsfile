@@ -1,7 +1,6 @@
 @Library('pipeline-lib')
 
 node {
-agent any
  stages {
  
  stage('Git Clone App') {
