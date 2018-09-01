@@ -1,3 +1,5 @@
+@Library('pipeline-lib') import *
+
 pipeline {
 agent any
  stages {
